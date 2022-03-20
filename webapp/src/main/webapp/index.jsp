@@ -1,7 +1,7 @@
 <form method="post" action="//submit.form" onSubmit="return validateForm();">
 <div style="max-width: 400px;">
 </div>
-<div style="padding-bottom: 18px;font-size : 24px;">Hotel Reservation</div>
+<div style="padding-bottom: 18px;font-size : 24px;">Varma Hotel Reservation</div>
 <div style="display: flex; padding-bottom: 18px;max-width : 450px;">
 <div style=" margin-left: 0; margin-right: 1%; width: 49%;">First name<span style="color: red;"> *</span><br/>
 <input type="text" id="data_2" name="data_2" style="max-width: 100%;" class="form-control"/>
