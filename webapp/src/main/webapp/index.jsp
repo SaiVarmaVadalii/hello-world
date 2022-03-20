@@ -1,140 +1,87 @@
-<div class="index container animated zoomIn">
-
-  <div class="form contactform">
-    <div id="page1">
-      <h1>Book Your Train Ticket</h1>
-      <div class="index row">
-
-        <div class="field col-sm-6">
-          <label for="from">From :</label>
-          <input id="from" type="text" />
-        </div>
-
-        <div class="field col-sm-6">
-          <label for="to">To :</label>
-          <input id="to" type="text" />
-        </div>
-
-
-        <div class="field col-sm-6 col-centered">
-          <label for="datepicker">Date</label>
-          <input id="datepicker" type="text" />
-        </div>
-        <div class="clearfix visible-xs"></div>
-        <div class="field col-sm-6 col-centered ">
-          <div id="search" class="btn  btn-primary">Search for Trains</div>
-        </div>
-      </div>
-    </div>
-    <div id="page2" class="animated zoomInDown">
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="table-responsive  text-center">
-            <table class="table table-bordered table-hover">
-              <caption class="text-center">Available Trains : </caption>
-              <thead>
-                <tr>
-                  <th> Train No</th>
-                  <th>Train Name</th>
-                  <th>Time</th>
-                  <th>Cost</th>
-                </tr>
-              </thead>
-              <tfoot>
-                <tr>
-                  <td colspan='100%'><span class="btn btn-danger book">Book Now</span></td>
-                </tr>
-              </tfoot>
-              <tbody class="member">
-                <tr>
-                  <td class="tnum">78654</td>
-                  <td id="trainname1" class="tnam"></td>
-                  <td class="ttime">04:30 AM</td>
-                  <td class="tcost">₹ 200</td>
-                </tr>
-                <tr>
-                  <td class="tnum">54876</td>
-                  <td id="trainname2" class="tnam"></td>
-                  <td class="ttime">10:15 AM</td>
-                  <td class="tcost">₹ 250</td>
-                </tr>
-                <tr>
-                  <td class="tnum">25312</td>
-                  <td id="trainname3" class="tnam"></td>
-                  <td class="ttime">15:50 PM</td>
-                  <td class="tcost">₹ 300</td>
-                </tr>
-                <tr>
-                  <td class="tnum">45698</td>
-                  <td id="trainname4" class="tnam"></td>
-                  <td class="ttime">21:30 PM</td>
-
-                  <td class="tcost">₹350</td>
-                </tr>
-                <tr>
-                  <td class="tnum">95464</td>
-                  <td id="trainname5" class="tnam"></td>
-                  <td class="ttime">23:15 PM</td>
-
-                  <td class="tcost">₹ 500</td>
-                </tr>
-
-              </tbody>
-
-            </table>
-          </div>
-
-        </div>
-      </div>
-
-
-    </div>
-    <!-----page2------>
-    <div id="invis" class="animated fadeInUpBig invis">
-      <div id="selectclass">
-        <h2>Select your class :</h2>
-        <div id="trainClass">
-          <label class="blue"><input type="radio" name="toggle"><span>GEN</span></label>
-          <label class="green"><input type="radio" name="toggle"><span>SL</span></label>
-          <label class="yellow"><input type="radio" name="toggle"><span>AC1</span></label>
-          <label class="pink"><input type="radio" name="toggle"><span>AC2</span></label>
-          <label class="purple"><input type="radio" name="toggle"><span>AC3</span></label>
-        </div>
-        <div id="bfoot">
-          <div class="col-xs-6 ">
-            <span class="btn btn-primary booknow">BOOK NOW</span></div>
-          <div class="col-xs-6 ">
-            <span class="btn btn-danger bookcancel">CANCEL</span></div>
-        </div>
-      </div>
-    </div>
-
-
-  </div>
+<form method="post" action="//submit.form" onSubmit="return validateForm();">
+<div style="max-width: 400px;">
 </div>
-< <div class="final animated flip">
-  <h2> Here is Your Ticket</h2>
-  <div class="ticket" id="ticket">
-    <div class="row">
-      <div class="col-xs-6 pull-left" id="date"></div>
-      <div class="col-xs-6 pull-right ">INDIAN RAILWAYS</div>
-    </div>
-    <div class="row">
-      <div class="col-xs-6 trainno"><span id="number"></span></div>
-      <div class="col-xs-6 trainname"></div>
-    </div>
-    <div class="row">
-      <div class="col-xs-6 from">From :<span id="From"></span></div>
-      <div class="col-xs-6 to">To :<span id="To"></span></div>
-    </div>
-    <div class="row">
-      <div class="col-xs-6 barcode">
-        <table id="barcodes">
-          <tr></tr>
-        </table>
-      </div>
-      <div class="col-xs-2 compartment">S3</div>
-      <div class="col-xs-4 seatno">Seat No:45</div>
-    </div>
-  </div>
-  </div>
+<div style="padding-bottom: 18px;font-size : 24px;">Hotel Reservation</div>
+<div style="display: flex; padding-bottom: 18px;max-width : 450px;">
+<div style=" margin-left: 0; margin-right: 1%; width: 49%;">First name<span style="color: red;"> *</span><br/>
+<input type="text" id="data_2" name="data_2" style="max-width: 100%;" class="form-control"/>
+</div>
+<div style=" margin-left: 1%; margin-right: 0; width: 49%;">Last name<span style="color: red;"> *</span><br/>
+<input type="text" id="data_3" name="data_3" style="max-width: 100%;" class="form-control"/>
+</div>
+</div><div style="padding-bottom: 18px;">Phone<span style="color: red;"> *</span><br/>
+<input type="text" id="data_4" name="data_4" style="max-width : 450px;" class="form-control"/>
+</div>
+<div style="padding-bottom: 18px;">Email<span style="color: red;"> *</span><br/>
+<input type="text" id="data_5" name="data_5" style="max-width : 450px;" class="form-control"/>
+</div>
+<div style="padding-bottom: 18px;">Arrival date<span style="color: red;"> *</span><br/>
+<input type="text" id="data_6" name="data_6" style="max-width : 250px;" class="form-control"/>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.4.0/pikaday.min.js" type="text/javascript"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.4.0/css/pikaday.min.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">new Pikaday({ field: document.getElementById('data_6') });</script>
+<div style="padding-bottom: 18px;">Departure date<span style="color: red;"> *</span><br/>
+<input type="text" id="data_7" name="data_7" style="max-width : 250px;" class="form-control"/>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.4.0/pikaday.min.js" type="text/javascript"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.4.0/css/pikaday.min.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">new Pikaday({ field: document.getElementById('data_7') });</script>
+<div style="padding-bottom: 18px;">Number of adults<span style="color: red;"> *</span><br/>
+<input type="number" id="data_8" name="data_8" style="max-width : 250px;" class="form-control"/>
+</div>
+<div style="padding-bottom: 18px;">Number of children<br/>
+<input type="number" id="data_9" name="data_9" style="max-width : 250px;" class="form-control"/>
+</div>
+<div style="padding-bottom: 18px;">Questions / Comments<br/>
+<textarea id="data_10" false name="data_10" style="max-width : 450px;" rows="6" class="form-control"></textarea>
+</div>
+<div style="padding-bottom: 18px;"><input name="skip_Submit" value="Submit" type="submit"/></div>
+<div>
+<div style="float:right"><a href="https://www.100forms.com" id="lnk100" title="form to email">form to email</a></div>
+<script src="https://www.100forms.com/js/FORMKEY:JXFF3G684R8G/SEND:my@email.com" type="text/javascript"></script>
+</div>
+</form>
+
+<script type="text/javascript">
+function validateForm() {
+if (isEmpty(document.getElementById('data_2').value.trim())) {
+alert('First name is required!');
+return false;
+}
+if (isEmpty(document.getElementById('data_3').value.trim())) {
+alert('Last name is required!');
+return false;
+}
+if (isEmpty(document.getElementById('data_4').value.trim())) {
+alert('Phone is required!');
+return false;
+}
+if (isEmpty(document.getElementById('data_5').value.trim())) {
+alert('Email is required!');
+return false;
+}
+if (!validateEmail(document.getElementById('data_5').value.trim())) {
+alert('Email must be a valid email address!');
+return false;
+}
+if (isEmpty(document.getElementById('data_6').value.trim())) {
+alert('Arrival date is required!');
+return false;
+}
+if (isEmpty(document.getElementById('data_7').value.trim())) {
+alert('Departure date is required!');
+return false;
+}
+if (isEmpty(document.getElementById('data_8').value.trim())) {
+alert('Number of adults is required!');
+return false;
+}
+return true;
+}
+function isEmpty(str) { return (str.length === 0 || !str.trim()); }
+function validateEmail(email) {
+var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
+return isEmpty(email) || re.test(email);
+}
+</script>
